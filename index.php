@@ -11,7 +11,7 @@ if (mysqli_connect_errno()) {
 // Inisialisasi variabel pencarian
 $cari = "";
 
-// Jika form pencarian dikirim
+// Jika form pencarian diki
 if (isset($_GET['cari'])) {
     $cari = $_GET['cari'];
     $query = "SELECT * FROM barang WHERE nama_barang LIKE '%$cari%'";
